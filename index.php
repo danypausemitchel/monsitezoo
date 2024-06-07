@@ -1,10 +1,9 @@
 
 <?php
-require_once __DIR__. "/templates/header.php";
+    require_once 'templates/header.php';
 ?>
-
-<body>
-<div class="container col-xxl-8 px-4 py-5">
+    
+    <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="assets/images/zoo.jpg" class="d-block mx-lg-auto img-fluid" alt="zoo" width="300">
@@ -17,4 +16,5 @@ require_once __DIR__. "/templates/header.php";
     </div>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
