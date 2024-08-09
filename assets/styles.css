@@ -1,6 +1,15 @@
 body{
-    background-color: yellow;
+    background-color: aqua
 }
+
+#navbarSite{
+    z-index: 1000;
+}
+
+.main-content-website section:nth-child(2n){
+    background-color: rgb(8, 245, 8);;
+}
+
 
 .carousel-indicators [data-bs-target]{
     background-color:red;
@@ -16,15 +25,17 @@ body{
     bottom: 10px;
     right: 10px;
     opacity: 0;
-    background-color:green;
     visibility: hidden;
-    /* Défilement auto */
     transition: 0.5s;
 }
 
 #scroll-top-button.show{
     opacity: 1;
     visibility: visible;
+}
+
+.p_blue{
+    background-color: black;
 }
 
 

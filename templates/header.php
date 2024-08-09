@@ -8,36 +8,28 @@
     <link rel="stylesheet" href="assets/styles.css">
     <title>Arcadia</title>
 </head>
+
 <body>
 <header>
-      <nav class="position-fixed navbar navbar-expand-lg bg-warning w-100 fs-4 fw-bold">
+      <nav id="navbarSite" class="position-fixed navbar navbar-expand-lg bg-warning w-100 fs-5 fw-bold">
         <div class="container-fluid  elementNav fw-bold text-success">
                 <i class="bi bi-gitlab"></i>
                 <div class="ms-5">ARCADIA</div>
-          
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              <a class="nav-link" href="#">Qui sommmes nous</a>
-              <a class="nav-link" aria-current="page" href="visite.html">Vie de l'association</a>
-              <a class="nav-link" href="#">Missions</a>
+              <a class="nav-link" href="#">Tous les animaux</a>
+              <a class="nav-link" aria-current="page" href="visite.html">Contact</a>
             </div>
           </div>
         </div>
         <div class="col-md-3 text-end">
-           <a href="logout.php" class="btn btn-outline-danger me-2">Professionnel</a>                 
+           <a href="logout.php" class="btn btn-outline-danger me-2">Espace professionnel</a>
         </div>
       </nav>
-      </header>
-
-      
-            
-            
-
-
-
-      
-   
+  </header>
+  <main class="main-content-website" >
