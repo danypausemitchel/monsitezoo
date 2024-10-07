@@ -1,20 +1,38 @@
 
 </main>
     <section>
-        <footer class="py-5 p_blue" data-bs-theme="dark">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-            
-            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-            <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
-
-
-        </footer>
+        <footer class="py-5 p_blue text-center footer-page" data-bs-theme="dark">
+        <div class="py-2">
+        <button class="me-2 btn-social-share btn btn-outline-danger"><i class="bi bi-linkedin"></i></button>
+        <button class="me-2 btn-social-share btn btn-outline-danger"><i class="bi bi-facebook"></i></button>
+        <button class="me-2 btn-social-share btn btn-outline-danger"><i class="bi bi-twitter"></i></button>
+        <button class="me-2 btn-social-share btn btn-outline-danger"><i class="bi bi-pinterest"></i></button>
+      </div>
+      <div class="text-white">
+        Tous droits réservés. <br/>
+        Copyright @ 2024
+      </div>
+       </footer>
+       
+      <footer class="bg-dark text-white text-center footer">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <h3 class="text-primary">Nos horaires</h3>
+                <p>Du mardi au dimanche  12:00-14:00  18:00-23:00</p>
+            </div>
+            <div class="col-6 col-lg-4">
+                <p>Quai Antique <br/>
+                    5 rue de la route <br/>
+                    31150 Ville <br/>
+                    04 01 01 01 01 <br/>
+                </p>
+            </div>
+            <div class="col-6 col-lg-4">
+                <p>test</p>
+            </div>
+        </div>
+    </footer>
+       
     </section>
 
 

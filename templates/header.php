@@ -1,3 +1,9 @@
+<?php
+require_once('lib/config.php');
+require_once('lib/pdo.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/styles.css">
-    <title>Arcadia</title>
+    <title>zoojosé</title>
 </head>
 
 <body>
@@ -28,7 +34,7 @@
           </div>
         </div>
         <div class="col-md-3 text-end">
-           <a href="logout.php" class="btn btn-outline-danger me-2">Espace professionnel</a>
+           <a href="logout.php" class="btn btn-danger me-2">Espace professionnel</a>
         </div>
       </nav>
   </header>
