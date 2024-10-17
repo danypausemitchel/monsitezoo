@@ -7,13 +7,13 @@
         return $query->fetch();
     }
         
-function insertImageServ(string|null $image) {
-        if ($image === null) {
-            return _ASSETS_IMG_PATH_SERV.'_default.jpg';
-        } else {
-            return _ASSETS_IMG_PATH_SERV.$image;
+    function insertImageServ(string|null $image) {
+            if ($image === null) {
+                return _ASSETS_IMG_PATH_SERV.'_default.jpg';
+            } else {
+                return _ASSETS_IMG_PATH_SERV.$image;
+            }
         }
-    }
 
     function getServices(PDO $pdo) {
         $sql = 'SELECT * FROM services ORDER BY id ASC';

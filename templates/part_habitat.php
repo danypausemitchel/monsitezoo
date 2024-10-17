@@ -5,7 +5,7 @@
                 <div class="card-body">
                     <h5 class="card-title"><?=$abri['name'];?></h5>
                     <p class="card-text"><?=$abri['description'];?></p>
-                    <a href="<?=$abri['id'];?>" class="btn btn-primary">Voir les animaux</a>
+                    <a href="animals.php?id=<?=$abri['id'];?>" class="btn btn-primary">Voir les animaux</a>
                 </div>
         </div>
     </div>

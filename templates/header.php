@@ -2,6 +2,7 @@
 require_once('lib/config.php');
 require_once('lib/pdo.php');
 
+$page = basename($_SERVER['SCRIPT_NAME']);
 ?>
 
 <!DOCTYPE html>
@@ -17,24 +18,28 @@ require_once('lib/pdo.php');
 
 <body>
 <header>
-      <nav id="navbarSite" class="position-fixed navbar navbar-expand-lg bg-warning w-100 fs-5 fw-bold">
+      <div id="navbarSite" class="position-fixed navbar navbar-expand-lg bg-warning w-100 fs-4 fw-bold">
         <div class="container-fluid  elementNav fw-bold text-success">
-                <i class="bi bi-gitlab"></i>
-                <div class="ms-5">ARCADIA</div>
+                <i class="bi bi-gitlab ms-5"></i>
+          <div class=ms-5>ARCADIA</div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-              <a class="nav-link" href="#">Tous les animaux</a>
-              <a class="nav-link" aria-current="page" href="visite.html">Contact</a>
-            </div>
-          </div>
+    
+            <ul class="nav nav-pills">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <?php foreach ($menu as $key => $value) { ?>
+                  <li class="nav-item"> <a href="<?=$key; ?>>" class="nav-link <?php if ($page === $key) { echo 'active'; } ?>"><?=$value ;?>
+                  </a></li>
+              <?php } ?>
+                </div>
+            </ul>
         </div>
+
+        
         <div class="col-md-3 text-end">
-           <a href="logout.php" class="btn btn-danger me-2">Espace professionnel</a>
+           <a href="logout.php" class="btn btn-outline-danger me-2">Espace professionnel</a>
         </div>
       </nav>
   </header>

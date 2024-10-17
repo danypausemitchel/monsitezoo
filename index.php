@@ -5,11 +5,12 @@ require_once "lib/service.php";
 
 $abris = getHabitats($pdo);
 $services = getServices($pdo);
+
 ?>
 
 
     <section id="accueil">
-        <div class="container col-xxl-8 px-4 py-5 ">
+        <div class="container col-xxl-8 px-4 py-5 text-center">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5" >
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="assets/images/site/zoo.jpg" class="d-block mx-lg-auto img-fluid rounded" alt="zoo" width="500" loading="lazy">
@@ -25,12 +26,12 @@ $services = getServices($pdo);
         </section>
 
         <section>
-        <div class="container col-xxl-8 px-4 py-3">
+        <div class="container col-xxl-8 px-4 py-3 text-center">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-4">Être le plus écologique possible !</h1>
-                    <h5 class="fw-bold">Nos espaces d'acceuil c'est à dire le parking, l'espace de réception, le restaurant..., sont équipés avec des panneaux solaires et la cuisine se fait le plus au feu de bois.
-                    ,lors des différents visites, du rafraichissement simple sont prévues gratuitement, pour préserver le plus possible des déchets sur le parc.
+                    <h5 class="fw-bold">Nos espaces d'acceuil c'est à dire le parking, l'espace de réception, le restaurant..., sont équipés avec des panneaux solaires et la cuisine se fait le plus au feu de bois
+                    ,lors des différents visites, du rafraichissement simple sont prévues gratuitement, pour préserver le plus possible des déchets sur le parc, des poubelles sont prévues à cette effet.
                     </h5>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
@@ -41,10 +42,10 @@ $services = getServices($pdo);
         </section>
 
         <section class="p-5 text-center" id="habitats" >
-          <h2 class="display-5 fw-bold lh-1 mb-3 text-warning">LES HABITATS</h2>
+          <h2 class="display-5 fw-bold lh-1 mb-3 text-success">LES HABITATS</h2>
           <div class="row text-center m-5">
             <?php foreach ($abris as $abri) { 
-              include ('templates/part_habitat.php');
+              include "templates/part_habitat.php";
               } ?> 
            </div> 
         </section>
@@ -62,7 +63,7 @@ $services = getServices($pdo);
                 </div>
 
             <div class="carousel-inner">
-            <?php include ('templates/part_service.php')?>;
+            <?php include "templates/part_service.php"?>;
              </div>
 
                 <!-- Mettre les commandes -->
@@ -83,5 +84,5 @@ $services = getServices($pdo);
 
 
 <?php
-  require_once 'templates/footer.php';
+  require_once "templates/footer.php";
 ?>

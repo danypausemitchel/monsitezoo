@@ -7,13 +7,13 @@
         return $query->fetch();
     }
         
-function insertImageHab(string|null $image) {
-        if ($image === null) {
-            return _ASSETS_IMG_PATH_HAB.'habitat_default.jpg';
-        } else {
-            return _ASSETS_IMG_PATH_HAB.$image;
+    function insertImageHab(string|null $image) {
+            if ($image === null) {
+                return _ASSETS_IMG_PATH_HAB.'habitat_default.jpg';
+            } else {
+                return _ASSETS_IMG_PATH_HAB.$image;
+            }
         }
-    }
 
     function getHabitats(PDO $pdo) {
         $sql = 'SELECT * FROM abris ORDER BY id ASC';
