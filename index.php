@@ -77,7 +77,7 @@ $services = getServices($pdo);
                 </button>
               </div>
             </div>
-            <a href="#accueil" class="btn btn-outline-danger" id="scroll-top-button">
+            <a href="#accueil" class="btn btn-danger" id="scroll-top-button">
                 <i class="bi bi-chevron-up"></i>
             </a>
         </section>

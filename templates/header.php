@@ -1,8 +1,9 @@
 <?php
-require_once('lib/config.php');
-require_once('lib/pdo.php');
+require_once("lib/config.php");
+require_once("lib/pdo.php");
 
 $page = basename($_SERVER['SCRIPT_NAME']);
+
 ?>
 
 <!DOCTYPE html>
