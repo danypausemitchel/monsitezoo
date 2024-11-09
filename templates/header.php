@@ -19,10 +19,10 @@ $page = basename($_SERVER['SCRIPT_NAME']);
 
 <body>
 <header>
-      <div id="navbarSite" class="position-fixed navbar navbar-expand-lg bg-warning w-100 fs-4 fw-bold">
+      <div id="navbarSite" class="position-fixed navbar navbar-expand-lg bg-warning w-100 fs-5 fw-bold">
         <div class="container-fluid  elementNav fw-bold text-success">
-                <i class="bi bi-gitlab ms-5"></i>
-          <div class=ms-5>ARCADIA</div>
+                <i class="bi bi-gitlab"></i>
+          <div>ARCADIA</div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,7 @@ $page = basename($_SERVER['SCRIPT_NAME']);
             <ul class="nav nav-pills">
               <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <?php foreach ($menu as $key => $value) { ?>
-                  <li class="nav-item"> <a href="<?=$key; ?>>" class="nav-link <?php if ($page === $key) { echo 'active'; } ?>"><?=$value ;?>
-                  </a></li>
+                  <li class="nav-item"> <a href="<?=$key; ?>" class="nav-link <?php if ($page === $key) { echo 'active'; } ?>"><?=$value ;?></a></li>
               <?php } ?>
                 </div>
             </ul>
