@@ -1,6 +1,6 @@
 <?php
 require_once "templates/header.php";
-require_once "lib/habitat.php";
+require_once "lib/reception.php";
 require_once "lib/service.php";
 
 $abris = getHabitats($pdo);

@@ -6,6 +6,6 @@ define('_ASSETS_IMG_PATH_ANIMAL','assets/images/animals/');
 
 $menu = [
     'index.php' => 'Accueil',
-    'animals.php' => 'Tous les animaux',
+    'animaux.php' => 'Tous les animaux',
     'contact.php' => 'Contact'
   ];

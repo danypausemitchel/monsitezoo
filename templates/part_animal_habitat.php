@@ -5,7 +5,6 @@
                 <div class="card-body">
                     <h5 class="card-title"><?=$animal['name'];?></h5>
                     <p class="card-text"><?=$animal['description'];?></p>
-                    <p class="card-text fw-bold">Habitat : <?=$animal['abri_name']?></p>
                 </div>
         </div>
     </div>
