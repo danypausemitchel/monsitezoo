@@ -4,10 +4,11 @@
       if($i==0){ ?>
         <div class="carousel-item active">
           <div class="p-y3">
-            <h3 class="name"><?=$service['nom'];?></h3>
-             <p class="description fw-bold"><i><?=$service['description'];?></i></p>
+            <!-- Protection attaque avec htmlentities -->
+            <h3 class="name"><?=htmlentities($service['nom']);?></h3>
+             <p class="description fw-bold"><i><?=htmlentities($service['description']);?></i></p>
           </div>
-          <img src="<?=insertImageServ($service['image_name']);?>" class="d-block m-auto img-thumbnail w-50" alt="<?=$service['image_name'];?>">
+          <img src="<?=insertImageServ($service['image_name']);?>" class="d-block m-auto img-thumbnail w-50" alt="<?=htmlentities($service['image_name']);?>">
         </div>
 
         <?php               
@@ -15,10 +16,10 @@
             if($i != 0){?>
               <div class="carousel-item"> 
                 <div class="p-y3">
-                  <h3 class="name"><?=$service['nom'];?></h3>
-                  <p class="description fw-bold"><i><?=$service['description'];?></i></p>
+                  <h3 class="name"><?=htmlentities($service['nom']);?></h3>
+                  <p class="description fw-bold"><i><?=htmlentities($service['description']);?></i></p>
                 </div>
-                <img src="<?=insertImageServ($service['image_name']);?>" class="d-block m-auto img-thumbnail w-50" alt="<?=$service['image_name'];?>">
+                <img src="<?=insertImageServ($service['image_name']);?>" class="d-block m-auto img-thumbnail w-50" alt="<?=htmlentities($service['image_name']);?>">
                 <?php $i++; ?>
               </div>
 

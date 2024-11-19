@@ -2,20 +2,20 @@
 require_once ('templates/header.php');
 require_once ('lib/reception.php');
 
+$error =false;
 
 $id = (int) $_GET['id'];
-$animals = getAnimaux($pdo);
-$habitats= getAbrisdId($pdo,$id)
+$animals = getAbriAnimalsById($pdo, $id);
+$habitats= getAbrisId($pdo,$id)
 ?>
 
 
-    <div class="p-5 text-center">
-      <h1 class="display-5 fw-bold"><?= $habitats['name']?></h1>
+    <div class="p-5">
+      <h1 class="d-flex justify-content-center m-4 fw-bold"><?= $habitats['name']?></h1>
     </div>
 
-    <div class="row text-center m-5">
+    <div class="row text-center m-auto">
         <?php foreach ($animals as  $animal) { 
-          if($id===$animal['id_abris'])
             include ('templates/part_animal_habitat.php');
             } ?>     
     </div>
@@ -23,3 +23,4 @@ $habitats= getAbrisdId($pdo,$id)
     <?php
     require_once ('templates/footer.php');
     ?>
+    

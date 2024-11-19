@@ -20,7 +20,6 @@
 }
 
 function insertImageAnimaux(string|null $image) {
-           
   return _ASSETS_IMG_PATH_ANIMAL.$image;
 }
 
@@ -33,16 +32,22 @@ function insertImageAnimaux(string|null $image) {
     return $query->fetchAll(PDO ::FETCH_ASSOC);
 }
 
-function getAbrisdId(PDO $pdo, int $id) {
+function getAbrisId(PDO $pdo, int $id):array|bool{
     $query=$pdo->prepare('SELECT * FROM abris WHERE id = :id');
     $query->bindParam(':id', $id, PDO::PARAM_INT);
     $query->execute();
-    return $query->fetch();
+    $habitats = $query->fetch();
+    return $habitats;
 }
 
-function getRecipeById(PDO $pdo, int $id) {
-    $query = $pdo->prepare("SELECT * FROM recipes WHERE id = :id");
+function getAbriAnimalsById(PDO $pdo, $id): array
+{
+    $sql = 'SELECT animals.*, abris.name, animals.name
+            FROM animals 
+            JOIN abris ON abris.id = animals.id_abris
+            WHERE abris.id = :id'; 
+    $query = $pdo->prepare($sql);
     $query->bindParam(':id', $id, PDO::PARAM_INT);
     $query->execute();
-    return $query->fetch();
+    return $query->fetchAll(PDO::FETCH_ASSOC);
 }

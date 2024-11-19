@@ -9,11 +9,11 @@ $animals = getAbriAnimals($pdo);
 ?>
 
 
-    <div class="p-5 text-center">
-      <h1 class="display-5 fw-bold">Les animaux</h1>
+    <div class="p-5">
+      <h1 class="d-flex justify-content-center m-4 fw-bold">Les animaux</h1>
     </div>
 
-    <div class="row text-center m-5">
+    <div class="row text-center m-auto">
         <?php foreach ($animals as  $animal) { 
             include ('templates/part_animaux.php');
             } ?>     
